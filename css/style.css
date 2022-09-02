@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url(/css/loading.css);
+a {
+    color: black
+}
+a i:hover {
+    color: red;
+}
+.tab-menu {
+    display: none;
+}
+.main{
+    display: none;
+}
+/* HEADER */
+.header {
+    position: relative;
+    margin: 30px 20px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header i {
+    font-size: 25px;
+}
+.logo {
+
+    cursor: pointer;
+}
+
+.search-box {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 350px;
+    height: 30px;
+    outline: 5px black;
+    background-color: #f0f2f5;
+    cursor: pointer;
+    border-radius: 10px black;
+}
+.search-box:hover {
+    outline: auto black;
+    border-radius: 20px ;
+
+}
+.search-box i {
+    margin: 3px 20px;
+    float: right;
+}
+.search-box input {
+    margin: 0px 0px 0px 20px;
+    text-align: center;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.user-side i {
+    margin: 0px 10px;
+}
+.user-side i:hover {
+    color: red;
+}
+.user-avatar {
+    margin-top: -12px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.user-side .modal-body img {
+   margin: 5px 8px 5px 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.toast {
+    margin: 20px 0px;
+    width: 100%;
+}
+/* MAIN-CONTAINER*/
+.container {
+    z-index: 1;
+    width: 600px;
+    margin: 50 50;
+}
+.post-box {
+    display: flex;
+    flex-direction: row;
+
+    background-color: #DCDCDC;
+    border-radius: 20px ;
+    margin-bottom: 20px;
+}
+.post-tool {
+    padding: 20px 20px;
+    width: 100%;
+}
+.post-box input {
+    margin: 15px 0px;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.post-tool i {
+    margin: 0px 20px;
+}
+.post-box .user-avatar {
+    margin: 20px 20px;
+}
+.post-box button {
+    float: right;
+   
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+/* SUGGESTED BOX */
+
+.suggested-box {
+    height: 100%;
+    background-color: #DCDCDC;
+    border-radius: 20px ;
+}
+.news-live-video {
+    display: flex;  
+    flex-direction: row; 
+    justify-content: space-around;
+    text-align: center;
+}
+.news-live-video h3 {
+    margin: 10px 0px;
+}
+.news-live-video .news-text {
+    width: 110px;
+    height: 100%;
+    background-color: #6260FF;
+    border-radius: 20px;
+}
+.news-box {
+    display: flex;
+    flex-direction: row;
+    overflow:scroll;
+    overflow-y: hidden;
+ 
+}
+.news .card {
+    cursor: pointer;
+    margin: 10px 10px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    width: 160px;
+    height: 200px;
+    border-radius: 20px;
+   
+
+
+}
+
+.news .card-img-top {
+    z-index: 3;
+    position:absolute;
+    position:absolute;
+    margin: 10px 0px 0px 5px;
+    width: 30px;
+    height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%  
+}
+.card-body {
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.news .card-body img {
+    
+    z-index: 2;
+    height: 100%;
+    width: 100%; 
+    image-rendering: auto;
+    object-fit: cover;
+    border-radius: 20px; 
+   
+}
+.news h5 {
+    margin-top: -30px;
+    margin-left: 10px;
+    color: white;
+    z-index: 2;
+}
+.outline-avatar {
+    z-index: 2;
+    position:absolute;
+    margin: 7px 0px 0px 2px;
+    width: 36px;
+    height: 36px;
+    border-radius: 20px;
+    background-color: rgb(0, 158, 222);
+}
+
+
+.post-public {
+    width: 100%;
+    position: relative;
+    margin: 20px 0px;
+    padding-top: 20px;
+    height: 100%;
+    background-color: #DCDCDC;
+    border-radius: 20px ;
+
+}
+
+.post-info { 
+    margin: 0px 20px;
+}
+.name-group {
+    font-weight:bolder;
+    padding-left: 50px;
+    
+}
+.name-user  {
+    font-weight: 500;
+    margin-top: -15px;
+}
+.status-post {
+    margin: -15px 50px;
+}
+.post-file   {
+    position: relative;
+    margin: 20px 0px 0px 0px;
+}
+.title-post {
+    margin: 10px 20px;
+}
+
+.file-post img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.icon-reacted {
+    
+    padding: 20px 0px;
+    text-align: center;
+   
+}
+.icon-reacted i {
+    cursor: pointer;
+    margin: 0px 50px;
+    font-size: 25px;
+}
+
+

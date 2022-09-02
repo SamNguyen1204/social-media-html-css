@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <script src="https://kit.fontawesome.com/c958b1255e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <title> SamMedia </title>
+</head>
+<body>
+  <div class="loader-page">
+    <div class="loader">
+      <span>L</span>
+      <span>O</span>
+      <span>A</span>
+      <span>D</span>
+      <span>I</span>
+      <span>N</span>
+      <span>G</span>
+    </div> 
+    <div class="information-product">
+      <h3>Copyright 2021-2022</h3>
+      <h5> Developed by <a href="https://www.facebook.com/hoangphat1204/">Phat Nguyen</a></h5>
+    </div>
+  </div>
+    <!--HEADER-->
+
+  <div class="main">
+    
+    <div class="header">
+      <div class="logo">
+          <h2> S@mMedia</h2>
+      </div>
+      <div class="search-box">
+          <input type="text" placeholder="Search.....">
+          <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="user-side">
+
+          <!--Messages-->
+
+          <i class="fa-regular fa-message" data-bs-toggle="modal" data-bs-target="#myModalMessages"></i>
+          <div class="modal message" id="myModalMessages">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+           
+                  <div class="modal-header">
+                    <h4 class="modal-title message">MESSAGES</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  
+                  <div class="modal-body">
+                      <div class="toast show messages 1">
+                          <div class="toast-header">
+                              <img class="user-avatar" src="./image/ngocminh.jpg">
+                              Ngọc Minh
+                          
+                          </div>
+                          <div class="toast-body">
+                            Ngọc Minh: Ok m
+                          </div>
+                      </div>
+                      <div class="toast show messages 2">
+                          <div class="toast-header">
+                              <img class="user-avatar" src="./image/nhannguyen.jpg">
+                              Nhân Nguyễn
+                          </div>
+                          <div class="toast-body">
+                            You: Nhìn ngáo thế
+                          </div>
+                      </div>
+                      <div class="toast show messages 2">
+                          <div class="toast-header">
+                              <img class="user-avatar" src="./image/.jpg">
+                              Team PUBG
+                          </div>
+                          <div class="toast-body">
+                            Sam: vô nè
+                          </div>
+                      </div>
+                  </div>
+            
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+            
+                </div>
+              </div>
+          </div>
+
+
+          
+          <!--Notifications-->
+
+          <i class="fa-regular fa-bell" data-bs-toggle="modal" data-bs-target="#myModalNotifications"></i>
+          <div class="modal" id="myModalNotifications">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">NOTIFICATIONS</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="toast show notification 1">
+                          <div class="toast-header">
+                              <img class="user-avatar" src="./image/avatar.jpg">
+                            Phat Nguyen
+                            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                          </div>
+                          <div class="toast-body">
+                              Accepted your friend request
+                          </div>
+                        </div>
+                      <div class="toast show notification 2">
+                          <div class="toast-header">
+                              <img class="user-avatar" src="./image/nhannguyen.jpg">
+                            Nhân Nguyễn
+                            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                          </div>
+                          <div class="toast-body">
+                              Commented to your post:"Đẹp quá đi"
+                          </div>
+                      </div>
+                      <div class="toast show notification 3">
+                          <div class="toast-header">
+                              <img class="user-avatar" src="./image/ngocminh.jpg">
+                            Ngọc Minh
+                            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                          </div>
+                          <div class="toast-body">
+                              Reacted to your photo
+                          </div>
+                      </div>
+                      <div class="toast show notification 2">
+                          <div class="toast-header">
+                              <img class="user-avatar" src="./image/ngocminh.jpg">
+                            Ngọc Minh
+                            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                          </div>
+                          <div class="toast-body">
+                              Commented to your post:"Nhìn ảo quá"
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+            
+                </div>
+              </div>
+          </div>
+          <img class="user-avatar" data-bs-toggle="dropdown" src="./image/avatar.jpg" >
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i>Profile</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-gear"></i>Settings</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-users"></i>Change Account</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a></li>
+            </ul>
+      </div>
+
+  
+    </div>
+    <div class="tab-menu">
+      <nav class="menu">
+        <a href="#" class="menu-item">
+          <i class="fa-solid fa-house-user"></i>
+
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fa-regular fa-bell"></i>
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fa-solid fa-user"></i>
+        </a>
+      </nav>
+    </div>
+
+  <!-- MAIN CONTAINER-->
+
+  <div class="container">
+      <!--POST_SIDE-->
+
+      <div class="post-box">
+          <img class="user-avatar" src="./image/avatar.jpg">
+          <div class="post-tool">
+           <input type="text" placeholder="What're you doing?">
+           <i class="fa-solid fa-image"> Image </i>
+           <i class="fa-solid fa-video"> LIVE </i>
+           <i class="fa-solid fa-face-smile"> FEELING</i>
+           <button type="button">POST</button>
+          </div>
+          
+
+      </div>
+
+      <!--NEWS-SIDE-->
+      <div class="suggested-box">
+          <div class="news-live-video">
+              <h3 class="news-text">NEWS</h3>
+              <h3 class="live-text">LIVE</h3>
+              <h3 class="video-text">VIDEO</h3>
+          </div>
+         <div class="news-box">
+          <div class="news">
+              <div class="card news">
+                  <img class="card-img-top" src="./image/avatar.jpg" alt="Card image"><span class="outline-avatar"></span>
+                  <div class="card-body">
+                      <img src="./image/moto.jpg">
+                      <h5 class="name-user-news">Phat Nguyen</h5>
+                  </div>
+                </div>
+          </div>
+          <div class="news">
+              <div class="card news">
+                  <img class="card-img-top" src="./image/ngocminh.jpg" alt="Card image"><span class="outline-avatar"></span>
+                  <div class="card-body">
+                      <img src="./image/ngocminh.jpg">
+                      <h5 class="name-user-news">Ngọc Minh</h5>
+                  </div>
+                </div>
+          </div>
+          <div class="news">
+              <div class="card news">
+                  <img class="card-img-top" src="./image/nhannguyen.jpg" alt="Card image"><span class="outline-avatar"></span>
+                  <div class="card-body">
+                      <img src="./image/news.jpg">
+                      <h5 class="name-user-news">Nhân Nguyễn</h5>
+                  </div>
+                </div>
+          </div>
+          <div class="news">
+              <div class="card news">
+                  <img class="card-img-top" src="./image/avatar.jpg" alt="Card image"><span class="outline-avatar"></span>
+                  <div class="card-body">
+                      <img src="./image/nhannguyen.jpg">
+                      <h5 class="name-user-news">Sam Nguyen</h5>
+                  </div>
+                </div>
+          </div>
+          
+         </div>
+          
+      </div>
+
+      <!--POST PUBLIC-->
+
+      <div class="post-public">
+        <div class="post-info">
+          <div class="name-group">
+            <h5>Động Nghiện gái</h5>
+          </div>
+          <div class="name-user">
+            <img class="user-avatar" src="./image/ngocminh.jpg">
+            <h7>Ngọc Minh</h7>
+          </div>
+          <div class="status-post">
+            <h7> Posted 7 min ago</h7>
+          </div>
+        </div>
+
+
+        <div class="post-file">
+          <div class="title-post">
+            Nhìn thèm quá ae ơi!!!!!
+  
+          </div>
+          <div class="file-post">
+             <img class="file-img" src="./image/gai1.jpg">
+          </div>
+          <div class="icon-reacted">
+            <span class="number-icon">2,3k<i class="fa-regular fa-heart" id="btn"></i></span>
+            <span class="number-icon">3k<i class="fa-regular fa-comment"></i></span>
+            <span class="number-icon">100<i class="fa-solid fa-share-from-square"></i></span>
+          </div>
+        </div>
+       
+        
+       
+       
+
+
+      </div>
+
+  </div>
+
+  <div class="footer">
+
+  </div>
+
+  </div>
+    <script src="./js/tooltip.js"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/icon.js"></script>
+</body>
+</html>
